@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+venv/
+.env
+.ipynb_checkpoints/
+app_sample/
+app2/
+Background/
+car_collage_image/
+processed_data/
+raw_data/
