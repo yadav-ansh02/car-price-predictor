@@ -1,4 +1,4 @@
-# Car Price predictor 
+# Car Price Predictor 
 
 Machine learning project that predicts used car prices through data preprocessing, feature engineering, and model optimization.
 
@@ -19,13 +19,24 @@ Machine learning project that predicts used car prices through data preprocessin
 <h2><a class="anchor" id="overview"></a>Overview</h2>  
 
 This project is an end-to-end machine learning application that predicts used car prices based on features such as brand, fuel type, transmission, kilometers driven, and vehicle age.
-The system includes data preprocessing, feature engineering, model comparison, and a Streamlit-based web interface for real-time price prediction.  
+ 
+ The project includes:
+ - Data Cleaning & Preprocessing
+ - Exploratory Data Analysis (EDA)
+ - Model Training & Evaluation
+ - Streamlit Web Application for real-time predictions
 
 --- 
 <h2><a class="anchor" id="business-problem"></a>Business Problem</h2>  
 
-Developed a machine learning solution to address inaccurate and inconsistent pricing in the used car market by predicting fair vehicle prices from historical data. 
+ This project aims to solve that problem by building a machine learning model that predicts fair market prices for used cars using historical vehicle data
 
+ The solution can help:
+ - Buyers estimate fair car prices
+ - Sellers price vehicles competitively 
+ - Dealerships automate valuation processes
+
+--- 
 <h2><a class="anchor" id="dataset"></a>Dataset</h2> 
 
 <p>
@@ -60,8 +71,12 @@ car-price-predictor-ml/
 ├── model.pkl
 ├── requirements.txt
 ├── README.md
+├── .gitignore
 └── notebooks/
+
 ```
+
+--- 
 <h2><a class="anchor" id="data-cleaning--preparation"></a>Data Cleaning preparation</h2> 
 
 The dataset was cleaned and preprocessed to improve data quality and model performance. The following steps were performed:
@@ -73,73 +88,62 @@ The dataset was cleaned and preprocessed to improve data quality and model perfo
 - Converted the `km_driven` column from object type to integer
 - Handled inconsistent formatting and prepared the dataset for machine learning models
 
-h2><a class="anchor" id="exploratory-data-analysis-eda"></a>Exploratory Data Analysis</h2>   
+--- 
 
-**Negative or zero values detected:**
-- 
-- 
-- 
+<h2><a class="anchor" id="exploratory-data-analysis-eda"></a>Exploratory Data Analysis</h2>   
 
 **Outliers Identified:** 
-- 
-- 
-- 
+- Extremely high-priced luxury vehicles 
+- Invalid year entries 
+- Cars with unusually high kilometers driven
 
 **Correlation Analysis:** 
-- 
-- 
-- 
-- 
+- Selling price negatively correlates with car age
+- Brand reputation strongly influences pricing
 
-h2><a class="anchor" id="research-questions--key-findings"></a>Research Questions & Key Findings</h2> 
-1. **Brands for promotions**: 198 brands with low sales but high profit margins 
-2. **Top vendors**: Top 10 vendors = 65.69% of purchases - risk of over-reliance
-3. **Bulk Purchasing Impact**: 72% cost savings per unit in large orders 
-4. **Inventory turnover**: $2.71M worth of unsold inentory 
 
 --- 
-h2><a class="anchor" id="dashboard"></a>Dashboard</h2>  
+ 
+<h2><a class="anchor" id="model-performance"></a>Model Performance</h2>
+Evaluation Metrics Used:
+ - R² Score 
+ - Mean Absolute Error (MAE) 
+ - Mean Squared Error (MSE) 
 
--Power BI dashboard shows: 
- - Vendor-wise sales and margins
- - Inventory Turnover
- - Bulk Purchase Savings 
- - Performance Heatmaps 
-
-![Vendor Perfomace Dashboard]{images/dashboard.png}
+**Best Performing Model:**
+Random Forest Regressor achieved the highest prediction accuracy compared to other models.
 
 --- 
-h2><a class="anchor" id="how-to-run-this-project"></a>How To Run This Project</h2> 
+<h2><a class="anchor" id="how-to-run-this-project"></a>How To Run This Project</h2> 
 1. Clone the repository:
 ```bash 
-git clone https://github.com/yourusername/vendor-performance-analysis.git
+git clone https://github.com/yourusername/car-price-predictor.git
+
 ...
-2.Load the CSVs and ingest into database:
+2.Navigate to the project directory:
 ```bash 
-python scripts/ingestion_db.py 
+  cd car-price-predictor
+
 ... 
-3.Create vender summary table:
+3.install dependencies:
 ```bash 
-python scripts/get_vendor_summary.py
+pip install -r requirements.txt
 ```
-4. Open and run notebooks:
-  - 'notebooks/esploaratory_data analysis.ipynb'
-  - 'notebooks/vendor_performance_analysis.ipynb'
-5. Open Power BI noteboks: 
-  - 'dashboards/vendor_performance_dashboard.pbix'
+4.Run the Streamlit application
+```bash 
+streamlit run app.py
 
 ---
-h2><a class="anchor" id="final-recommendations"></a>Final Recommendations</h2>  
-- Diversify vendor base to reduce risk
-- optimize bulk order straegies 
-- Reprice slow-moving , high-margin brands 
-- Clear unsold inventory strategically 
-- Improve marketing for underperforming vendors 
+<h2><a class="anchor" id="future-improvements"></a>Future Improvements</h2>
+- Deploy the application on Streamlit Cloud or Render
+- Improve UI/UX of the web application
 
 --- 
-h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>  
-**Ansh Yadav** 
-Email : yadav.ansh.0224@gmail.com 
+<h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>  
+**Ansh Yadav**    
+
+Email : yadav.ansh.0224@gmail.com  
+
 [LinkedIN](www.linkedin.com/in/ansh-yadav-4a7b04390)
 
 
