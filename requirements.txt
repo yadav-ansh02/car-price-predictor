@@ -4,5 +4,4 @@ scikit-learn
 matplotlib
 seaborn
 streamlit
-Linearregression
 joblib
