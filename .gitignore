@@ -4,6 +4,7 @@
 # Data
 raw_data.csv
 processed_data.csv
+Cleaned_Car_data.csv
 
 # Notebooks
 model_sampled.ipynb

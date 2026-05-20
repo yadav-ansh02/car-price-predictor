@@ -66,7 +66,7 @@ The dataset used in this project contains information about used cars, including
 car-price-predictor-ml/
 │
 ├── data/ 
-├── screenshots/
+├── images/
 ├── app.py
 ├── model.pkl
 ├── requirements.txt
