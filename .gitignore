@@ -2,7 +2,6 @@
 .ipynb_checkpoints/
 
 # Data
-data/
 raw_data.csv
 processed_data.csv
 
@@ -16,11 +15,9 @@ app_sample.py
 # Assets
 Background.css
 car_collage_image.png
-images/
+
 src/
 
-# Model files
-*.pkl
 
 # Python cache
 __pycache__/

@@ -98,7 +98,7 @@ The dataset was cleaned and preprocessed to improve data quality and model perfo
 - Cars with unusually high kilometers driven
 
 **Correlation Analysis:** 
-- Selling price negatively correlates with car age
+- Selling price negatively correlates with kms driven
 - Brand reputation strongly influences pricing
 
 
@@ -145,7 +145,7 @@ streamlit run app.py
 
 --- 
 <h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>  
-**Ansh Yadav**    
+Ansh Yadav   
 
 Email : yadav.ansh.0224@gmail.com 
 [LinkedIn](https://www.linkedin.com/in/ansh-yadav-4a7b04390)
