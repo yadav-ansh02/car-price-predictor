@@ -117,7 +117,7 @@ Random Forest Regressor achieved the highest prediction accuracy compared to oth
 <h2><a class="anchor" id="how-to-run-this-project"></a>How To Run This Project</h2> 
 1. Clone the repository:
 ```bash 
-git clone https://github.com/yourusername/car-price-predictor.git
+git clone https://github.com/yadav-ansh02/car-price-predictor.git
 
 ...
 2.Navigate to the project directory:
@@ -142,8 +142,7 @@ streamlit run app.py
 <h2><a class="anchor" id="author--contact"></a>Author & Contact</h2>  
 **Ansh Yadav**    
 
-Email : yadav.ansh.0224@gmail.com  
-
+Email : yadav.ansh.0224@gmail.com 
 [LinkedIN](www.linkedin.com/in/ansh-yadav-4a7b04390)
 
 
